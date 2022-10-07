@@ -3,7 +3,7 @@ function getProgress(status) {
     if(status >= 100) return `Už jen chvilku! ${status}%`
     if(status >= 75) return `Aplikace vykresluje vaše data. ${status}%`
     if(status >= 50) return `Přihlašujeme vás. ${status}%`
-    else return `Hledáme váš účet ${status}%`
+    return `Hledáme váš účet ${status}%`
 }
 
 console.log(getProgress(13))
