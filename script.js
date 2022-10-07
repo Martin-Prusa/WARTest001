@@ -33,3 +33,17 @@ function distributeGold(gold) {
 }
 
 console.log(distributeGold([2,3,8,9]))
+
+//---------------------------4----------------------------------------
+function getPosition(commands) {
+    const position = [0, 0]
+    commands.forEach(i => {
+        if(i.toLowerCase() === 'up') position[0]++
+        else if(i.toLowerCase() === 'down') position[0]--
+        else if(i.toLowerCase() === 'right') position[1]++
+        else if(i.toLowerCase() === 'left') position[1]--
+    })
+    return position
+}
+
+console.log(getPosition(['up', 'down', 'up', 'left', 'right', 'left']))
